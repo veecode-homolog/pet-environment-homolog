@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: pet-environment-homolog-location
+  description: Location to import all pet-environment-homolog catalog components
+spec:
+  targets:
+    - ./.platform/*.yaml

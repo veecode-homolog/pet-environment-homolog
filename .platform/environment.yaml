@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Environment
+metadata:
+  name: pet-environment-homolog
+  environment:
+    domain: pet.platform.vee.codes
+    hostedZoneId: Z0420419WKDTM5OR7WI9
+    vpc_id: vpc-051721395ecf1f7aa
+    vpc_name: platform_homolog_vpc
+    vpc_region: us-east-1
+    subnet_id: subnet-05d5b5e1ddfd856ca
+    subnet_name: platfrom_homolog_subnet
+    keypair_name: platform_kp
+    terraformStateBucketName: veecode-homolog-terraform-state
+    terraformStateBucketRegion: us-east-1
+  annotations:
+    github.com/project-slug: veecode-homolog/pet-environment-homolog
+    backstage.io/techdocs-ref: dir:..
+spec:
+  type: service
+  lifecycle: development
+  owner: "group:default/admin"
